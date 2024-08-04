@@ -4,79 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet"/>
     <title>Pousada Secreta</title>
 </head>
 <body>
     <div class="topo">
-        <div class="logo">
-            <a href="index.html">Pousada <span>Secreta</span></a>
-        </div>
-        <div>
-            <a href="#sobre">Sobre</a>
-            <a href="#rota">Rota</a>
-            <a href="#quartos">Quartos</a>
-        </div>
-    </div>
-
-    <div class="container-conteudo" id="">
-        <div class="container-principal">
-            <h1>Pousada Secreta</h1>
-            <p>A pousada reservada em Angra dos Reis</p>
-        </div>
-        <div class="container-secundario">
-            <h2>SEJA BEM-VINDO(A)!</h2>
-            <p>Relaxe em nossas acomodações e curta o melhor de Angra dos Reis.
-                Temos quartos para solteiro, casal ou família.
-            </p>
-            <div class="container-cards">
-                <div class="card">
-                    <a href="">
-                    <img src="assets/quarto-solteiro1.jpg" alt="Quarto de Solteiro">
-                    <h3>QUARTO DE SOLTEIRO</h3>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                    <img src="assets/quarto-casal1.jpg" alt="Quarto de Casal">
-                    <h3>QUARTO DE CASAL</h3>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="">
-                    <img src="assets/quarto-familia1.jpg" alt="Quarto Família">
-                    <h3>QUARTO FAMÍLIA</h3>
-                    </a>
-                </div>
+        <div class="container-topo limitar-secao">
+            <div class="container-link-logotipo">
+                <a href="index.html">Pousada <span>Secreta</span></a>
+            </div>
+            <div class="container-links">
+                <a class="link-topo" href="#sobre">SOBRE</a>
+                <a class="link-topo" href="#rota">ROTA</a>
+                <a class="link-topo" href="#quartos.html">QUARTOS</a>
             </div>
         </div>
     </div>
 
-    <div class="container-rota" id="rota">
-        <h2>ROTA</h2>
-        <p>Veja como chegar até a pousada</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234967.2834537709!2d-44.52054658523482!3d-23.047120236127252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c5253944d458d%3A0xd96796845bd7fd3!2sAngra%20dos%20Reis%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1722624718698!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="conteudo-principal">
+        <div class="banner">
+            <div class="container-titulo-site">
+                <h1>Pousada Secreta</h1>
+                <p>A pousada reservada em Angra dos Reis</p>
+            </div>
+        </div>
+
+        <div class="secao-container limitar-secao" id="bem-vindo">
+            <div class="container-descricao">
+                <h2>SEJA BEM-VINDO(A)!</h2>
+                <p>Relaxe em nossas acomodações e curta o melhor de Angra dos Reis.</p>
+                <p>Temos quartos para solteiro, casal ou família.</p>
+            </div>
+            <div class="container-quartos">
+                <div class="quarto">
+                    <a href="">
+                    <img src="assets/quarto-solteiro1.jpg" alt="Quarto de Solteiro" title="Quarto de Solteiro">
+                    <p>Quarto de Solteiro</p>
+                    </a>
+                </div>
+                <div class="quarto">
+                    <a href="">
+                    <img src="assets/quarto-casal1.jpg" alt="Quarto de Casal" title="Quarto de Casal">
+                    <p>Quarto de Casal</p>
+                    </a>
+                </div>
+                <div class="quarto">
+                    <a href="">
+                    <img src="assets/quarto-familia1.jpg" alt="Quarto Família" title="Quarto Família">
+                    <p>Quarto Família</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="secao-container" id="rota">
+        <div class="container-descricao">
+            <h2>ROTA</h2>
+            <p>Veja como chegar até a pousada</p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234967.2834537709!2d-44.52054658523482!3d-23.047120236127252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c5253944d458d%3A0xd96796845bd7fd3!2sAngra%20dos%20Reis%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1722624718698!5m2!1spt-BR!2sbr" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>        
+        </div>
+    </div>
+
+    <div class="secao-container" id="sobre">
+        <div class="container-descricao">
+            <h2>SOBRE A POUSADA!</h2>
+            <P>Conheça um pouco sobre nossa pousada.</P>
+        </div>
+        <div class="container-cards">
+            <div class="card">
+                <div class="container-card-descricao">
+                    <h3>A pousada</h3>
+                    <p>
+                        A pousada secreta dispoõe de estacionamento privativo gratuito,
+                        piscina ao ar livre e bar.
+                    </p>
+                </div>
+                <div class="container-card-img">
+                    <img src="assets/img1.jpg" alt="Pousada" title="Pousada">    
+                </div>
+            </div>
+            <div class="card">
+                <div class="container-card-descricao">
+                    <h3>Nossos Quartos</h3>
+                    <p>
+                        Os quartos possuem TV de tela plana a cabo, cozinha compacta e 
+                        área para refeições. Além disso, as unidades da Pousada Secreta
+                        contam com ar-condicionado e guarda-roupa.
+                    </p>
+                    <div class="container-card-img">
+                        <img src="assets/img2.jpg" alt="Quartos" title="Quartos">    
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="container-card-descricao">
+                    <h3>Alimentação</h3>
+                    <p>
+                        A pousada serve café da manhã em estilo continental ou buffet.
+                        Nossos restaurantes funcionam 24Hrs.
+                    </p>
+                </div>
+                <div class="container-card-img">
+                    <img src="assets/img3.jpg" alt="Alimentação" title="Alimentação">
+                </div>
+            </div>
+            <div class="card">
+                <div class="container-card-descricao">
+                    <h3>Recepção</h3>
+                    <p>Nossa recepção fica aberta 24Hrs.</p>
+                </div>
+                <div class="container-card-img">
+                    <img src="assets/img5.jpg" alt="Recepção" title="Recepção">
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="rodape">
-        <div class="contato">
-            <div class="texto-contato">
-            <h3>Entre em contato conosoco:</h3>
-        </div>
-            <div class="local">
-                <img src="assets/icones/endereco.png" alt="Endereço">
-                <p>Endereço Av. 123, 222 - Rio de Janeiro</p>
+        <div class="container-info limitar-secao">
+            <div class="card-info-rodape">
+                <h4>Entre em contato conosoco:</h4>
             </div>
-            <div class="telefone">
-                <img src="assets/icones/telefone.png" alt="Telefone">
+
+            <div class="card-info-rodape">
+                <a href="https://maps.google.com/maps" target="_blank">
+                <img src="assets/icones/endereco.png" alt="Icone de Endereço" title="Ícone de Endereço">
+                <p>Endereço Av. 123, 222 - Rio de Janeiro</p>
+                </a>
+            </div>
+
+            <div class="card-info-rodape">
+                <img src="assets/icones/telefone.png" alt="Telefone" title="Ícone Telefone">
                 <p>Cel: 55210000000</p>
             </div>
-            <div class="reserva">
-                <img src="assets/icones/calendario.png" alt="Reserva">
-                <p>Faça sua reserva pelo Booking.com</p>
+            
+            <div class="card-info-rodape">
+                <a href="https://www.booking.com/index.pt-br.html" target="_blank">
+                    <img src="assets/icones/calendario.png" alt="Reserva" title="Ícone Calendario">
+                    <p>Faça sua reserva pelo Booking.com</p>
+                </a>
             </div>
-        </div>
-        <div>
-            &copy; - Pousada Sercreta
+        </div>    
+        <div class="container-copyright"> 
+            &copy; - Pousada Sercreta - Desenvolvido por <span>Marcos Mendes</span>
         </div>
     </div>
 </body>
