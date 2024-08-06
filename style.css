@@ -206,7 +206,7 @@
 
 /*Estilização do Rodapé*/
 .rodape {
-    background-color: var(--fundo-ropapé);
+    background-color: var(--azul-claro);
     color: var(--branco);
 }
 
@@ -254,7 +254,7 @@
     padding: 20px;
     font-weight: 600;
     text-align: center;
-    border-top: 1px solid var(--borda);
+    border-top: 1px solid var(--branco);
 }
 
 .container-copyright span {
