@@ -21,7 +21,7 @@
 
 .limitar-secao {
     width: 100%;
-    max-width: 1440px;
+    max-width: 2440px;
     margin: 0 auto;
 }
 
@@ -67,6 +67,10 @@
     color: var(--cinza-claro);
 }
 
+.link-topo:hover {
+    color: var(--azul-claro);
+    font-weight: bold;
+}
 
 /*Estilização do Conteúdo Principal*/
 

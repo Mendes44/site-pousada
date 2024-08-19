@@ -49,6 +49,11 @@
     flex-grow: 1;
 }
 
+.container-quartos img:hover {
+    box-shadow: 0px 0px 5px 10px gray;
+    cursor: pointer;
+}
+
 .container-info {
     max-width: 1024px;
     margin: 0 auto;
@@ -71,3 +76,13 @@
     text-align: left;
 }
 
+
+/*Rodapé*/
+.container-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.rodape {
+    width: 100%;
+}
