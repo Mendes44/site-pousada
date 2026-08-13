@@ -1,0 +1,9 @@
+# Segredos e configurações locais nunca devem ser enviados ao repositório.
+.env
+.env.*
+!.env.example
+
+# Arquivos temporários comuns de ferramentas e sistemas operacionais.
+node_modules/
+.DS_Store
+Thumbs.db

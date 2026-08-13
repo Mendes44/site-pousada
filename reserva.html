@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- A página de reserva pode ser indexada, mas não expõe dados enviados pelo usuário. -->
+        <meta charset="UTF-8"><meta name="viewport"
+            content="width=device-width, initial-scale=1.0"><meta
+            name="description"
+            content="Consulte disponibilidade de quartos na Pousada Secreta em Angra dos Reis."><meta
+            name="robots" content="index, follow"><meta name="theme-color"
+            content="#123b35"><link rel="canonical"
+            href="https://www.pousadasecreta.com.br/reserva.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link
+            rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet"><link rel="stylesheet" href="style.css"><script
+            src="pratica.js" defer></script><title>Consultar reserva | Pousada
+            Secreta</title>
+    </head>
+    <body>
+        <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+        <header class="site-header" data-header><div
+                class="container nav-wrapper"><a class="brand" href="index.html"
+                    aria-label="Pousada Secreta — página inicial"><span
+                        class="brand-mark"
+                        aria-hidden="true">PS</span><span>Pousada
+                        <strong>Secreta</strong></span></a><button
+                    class="menu-toggle" type="button" aria-expanded="false"
+                    aria-controls="menu-principal" aria-label="Abrir menu"
+                    data-menu-button><span></span><span></span><span></span></button><nav
+                    class="main-nav" id="menu-principal"
+                    aria-label="Navegação principal" data-menu><a
+                        href="index.html#sobre">A pousada</a><a
+                        href="quartos.html">Quartos</a><a
+                        href="index.html#experiencias">Experiências</a><a
+                        href="index.html#localizacao">Localização</a><a
+                        class="button button-small" href="reserva.html"
+                        aria-current="page">Consultar
+                        reserva</a></nav></div></header>
+        <main id="conteudo">
+            <section class="page-hero"><div class="container"><p
+                        class="eyebrow">Reserva sem compromisso</p>
+                        <h1 id="titulo-reserva">Quando você quer descansar?</h1>
+                        <p>Preencha os dados abaixo.
+                        Nesta versão demonstrativa, nenhum dado pessoal é
+                        enviado ou armazenado.</p></div></section>
+            <section class="section"><div class="container reservation-layout">
+                    <aside class="reservation-info"><p
+                            class="eyebrow dark">Consulta de
+                            disponibilidade</p><h2>Planeje sua estadia</h2><p>Ao
+                            integrar o Supabase, a equipe receberá esta
+                            solicitação e poderá retornar com disponibilidade,
+                            valor e condições.</p><div
+                            class="secure-note"><strong>Seus dados em primeiro
+                                lugar</strong><br>Solicitamos apenas o
+                            necessário. O campo de mensagem não deve conter
+                            documentos, senhas ou informações
+                            financeiras.</div></aside>
+
+                    <!-- O formulário já possui nomes de campo estáveis para a futura API. -->
+                    <form class="reservation-form" data-reservation-form
+                        novalidate>
+                        <div class="form-grid">
+                            <div class="field"><label for="nome">Nome completo
+                                    *</label><input id="nome" name="nome"
+                                    type="text" autocomplete="name"
+                                    minlength="3" maxlength="100"
+                                    required></div>
+                            <div class="field"><label for="email">E-mail
+                                    *</label><input id="email" name="email"
+                                    type="email" autocomplete="email"
+                                    maxlength="160" required></div>
+                            <div class="field"><label
+                                    for="telefone">Telefone/WhatsApp
+                                    *</label><input id="telefone"
+                                    name="telefone" type="tel"
+                                    autocomplete="tel" inputmode="tel"
+                                    minlength="10" maxlength="20"
+                                    placeholder="(21) 99999-9999"
+                                    required></div>
+                            <div class="field"><label for="quarto">Tipo de
+                                    quarto *</label><select id="quarto"
+                                    name="quarto" required><option
+                                        value>Selecione</option><option
+                                        value="individual">Quarto
+                                        Individual</option><option
+                                        value="casal">Suíte
+                                        Casal</option><option
+                                        value="familia">Suíte
+                                        Família</option><option
+                                        value="sugestao">Quero uma
+                                        sugestão</option></select></div>
+                            <div class="field"><label for="checkin">Entrada
+                                    *</label><input id="checkin" name="checkin"
+                                    type="date" required></div>
+                            <div class="field"><label for="checkout">Saída
+                                    *</label><input id="checkout"
+                                    name="checkout" type="date" required></div>
+                            <div class="field"><label for="adultos">Adultos
+                                    *</label><select id="adultos" name="adultos"
+                                    required><option value="1">1
+                                        adulto</option><option value="2"
+                                        selected>2 adultos</option><option
+                                        value="3">3 adultos</option><option
+                                        value="4">4
+                                        adultos</option></select></div>
+                            <div class="field"><label
+                                    for="criancas">Crianças</label><select
+                                    id="criancas" name="criancas"><option
+                                        value="0">Nenhuma</option><option
+                                        value="1">1 criança</option><option
+                                        value="2">2 crianças</option><option
+                                        value="3">3
+                                        crianças</option></select></div>
+                            <div class="field full"><label
+                                    for="mensagem">Observações</label><textarea
+                                    id="mensagem" name="mensagem"
+                                    maxlength="500"
+                                    placeholder="Conte sobre alguma necessidade de acessibilidade ou preferência."></textarea><small>Máximo
+                                    de 500 caracteres. Não informe dados
+                                    sensíveis.</small></div>
+                        </div>
+                        <!-- O consentimento registra a finalidade da coleta segundo a LGPD. -->
+                        <label class="checkbox-field"><input type="checkbox"
+                                name="consentimento" value="aceito"
+                                required><span>Concordo que meus dados sejam
+                                usados para responder a esta solicitação,
+                                conforme a <a href="privacidade.html"
+                                    target="_blank">Política de Privacidade</a>.
+                                *</span></label>
+                        <button class="button" type="submit">Enviar
+                            solicitação</button>
+                        <p class="form-feedback" role="status" tabindex="-1"
+                            data-form-feedback></p>
+                    </form>
+                </div></section>
+        </main>
+        <footer class="site-footer"><div class="container footer-grid"><div><a
+                        class="brand footer-brand" href="index.html"><span
+                            class="brand-mark">PS</span><span>Pousada
+                            <strong>Secreta</strong></span></a><p>Conforto,
+                        natureza e hospitalidade em Angra dos
+                        Reis.</p></div><div><h2>Explore</h2><a
+                        href="quartos.html">Quartos</a><a
+                        href="index.html#sobre">A
+                        pousada</a></div><div><h2>Contato</h2><a
+                        href="tel:+552100000000">(21) 0000-0000</a><a
+                        href="mailto:reservas@pousadasecreta.com.br">reservas@pousadasecreta.com.br</a></div><div><h2>Dados</h2><a
+                        href="privacidade.html">Política de
+                        Privacidade</a></div></div><div
+                class="container footer-bottom"><p>© <span
+                        data-current-year></span> Pousada Secreta.</p>
+                        <p>Desenvolvido por <strong>Marcos Mendes</strong></p>
+    </body>
+</html>

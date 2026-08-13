@@ -1,38 +1,28 @@
 # Pousada Secreta
 
-Este projeto é uma página web simples que apresenta a pousada, suas acomodações e informações de contato.
+Modelo de site multipágina para uma pousada/agência de viagens, desenvolvido com HTML, CSS e JavaScript puro. A estrutura prioriza desempenho, manutenção simples, acessibilidade, SEO e futura integração com Supabase.
 
-## Estrutura do Projeto
+## Páginas
 
-O projeto é composto por 3 (três) arquivos principais:
+- `index.html`: apresentação, acomodações, diferenciais e localização.
+- `quartos.html`: detalhes e galerias das acomodações.
+- `reserva.html`: consulta de disponibilidade preparada para backend.
+- `privacidade.html`: modelo inicial de transparência e LGPD.
 
-- `index.html`: A página principal com o conteúdo e estrutura da pousada.
-- `quartos.html`: Onde mostra os quartos disponíveis da pousada.
-- `style.css e estilo-quarto`: O arquivo de estilo que define o design e layout do site.
+## Como executar
 
-## Seções do Site
+Abra `index.html` no navegador. Para testar rotas e comportamento mais próximos de uma hospedagem real, use uma extensão de servidor local ou execute um servidor HTTP simples na pasta do projeto.
 
-1. **Topo**
-   - Navegação com links para "Sobre", "Rota" e "Quartos".
+## Integração futura com Supabase
 
-2. **Conteúdo Principal**
-   - **Banner**: Apresentação visual da pousada.
-   - **Bem-vindo**: Descrição das acomodações disponíveis.
-   - **Rota**: Mapa embutido para ajudar na localização.
-   - **Sobre**: Detalhes sobre a pousada e seus serviços.
+A função `sendReservationToBackend`, em `pratica.js`, é o único ponto a ser substituído pela chamada ao backend. A recomendação é enviar o formulário a uma API ou Supabase Edge Function que valide, limite e grave a solicitação.
 
-3. **Rodapé**
-   - Informações de contato e links para reservas.
+Nunca inclua no JavaScript do navegador a chave `service_role`. Variáveis locais devem ficar em um arquivo `.env`, que não deve ser versionado. Ative Row Level Security nas tabelas e autorize somente as operações estritamente necessárias.
 
-## Estilo
+## Antes de publicar
 
-O estilo do site é definido no arquivo `estilo.css` e `quarto.css`, com foco em uma interface amigável e responsiva, utilizando a propriedade flexbox.
-
-## Tecnologias Utilizadas
-
-- HTML5
-- CSS3
-
-## Como Visualizar
-
-Para visualizar o site, basta abrir o arquivo `index.html` em um navegador web. Certifique-se de que todos os arquivos necessários, como imagens e ícones, estão corretamente vinculados e disponíveis no diretório do projeto.
+- Trocar domínio, endereço, telefone e e-mails de exemplo.
+- Revisar a Política de Privacidade com responsável jurídico.
+- Otimizar as imagens para WebP/AVIF e criar uma imagem social 1200 × 630.
+- Conectar o formulário ao backend e incluir proteção contra abuso.
+- Cadastrar o sitemap no Google Search Console e medir Core Web Vitals.

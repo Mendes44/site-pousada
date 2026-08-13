@@ -1,0 +1,4 @@
+# Permite o rastreamento público do site. Ajuste o domínio antes da publicação.
+User-agent: *
+Allow: /
+Sitemap: https://www.pousadasecreta.com.br/sitemap.xml
